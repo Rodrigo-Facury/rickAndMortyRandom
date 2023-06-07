@@ -1,0 +1,139 @@
+body {
+  margin: 0px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 13px;
+}
+
+#main-page-header {
+  background-color: #44281d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo {
+  height: 50px;
+  padding: 8px 0px;
+  margin-right: auto;
+}
+
+header a {
+  color: #FDFDFD;
+}
+
+#links-container {
+  margin-right: 20px;
+  justify-self: center;
+  margin-left: auto;
+}
+
+#register-link {
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+#login-link {
+  text-decoration: none;
+  background-color: #FDFDFD;
+  color: #0D0D0D;
+  padding: 8px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.product-card img {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  width: 100%;
+}
+
+.product-card {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  align-items: center;
+  background-color: #0d0d0d36;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px grey;
+}
+
+.product-card:hover {
+  box-shadow: 10px 10px 15px grey;
+}
+
+#products a {
+  text-decoration: none;
+  color: #0D0D0D;
+}
+
+#main-page-footer {
+  background-color: #0D0D0D;
+  color: #FDFDFD;
+  display: flex;
+  justify-content: center;
+}
+
+#products {
+  display: flex;
+  width: 70%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#e-commerce {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer-info {
+  display: flex;
+  width: 50vw;
+  justify-content: center;
+}
+
+#footer-info p {
+  margin: 25px 15px;
+}
+
+#search-input {
+  border-radius: 8px;
+  width: 250px;
+  text-indent: 10px;
+  font-size: 17px;
+  margin: 15px auto;
+}
+
+#search-input:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 375px) {
+  #footer-info {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+  }
+
+  #footer-info p {
+    margin: 25px 15px;
+    font-size: 10px;
+  }
+
+  #products {
+    margin: 20px 0px;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    justify-content: flex-start;
+  }
+
+  #search-input {
+    top: 105px;
+  }
+}
