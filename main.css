@@ -87,6 +87,7 @@ header a {
 
 #e-commerce {
   display: flex;
+  flex-direction: column;
   flex-grow: 1;
   align-items: center;
   justify-content: center;
@@ -112,6 +113,29 @@ header a {
 
 #search-input:focus {
   outline: none;
+}
+
+.color-button {
+  height: 45px;
+  width: 45px;
+  margin: 25px 0px;
+  cursor: pointer;
+}
+
+.salmon {
+  background-color: #e4a788;
+}
+
+.yellow {
+  background-color: #f0e14a;
+}
+
+.green {
+  background-color: #97ce4c;
+}
+
+.pink {
+  background-color: #e89ac7;
 }
 
 @media only screen and (max-width: 375px) {
